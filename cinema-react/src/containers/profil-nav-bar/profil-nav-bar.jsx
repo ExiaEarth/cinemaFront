@@ -1,6 +1,19 @@
-import { Avatar, Divider, Stack } from "@mui/material";
-import style from '';
+import { Avatar, Divider, ListItemButton, ListItemIcon, ListItemText, Stack } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import style from './profil-nav-bar.scss';
 
+const NavBarMenuItem = ({ to, text, icon, onSelected }) => {
+    return (
+        <ListItemButton component={NavLink} to={to} onClick={onSelected}>
+            <ListItemIcon>
+                {icon}
+            </ListItemIcon>
+            <ListItemText>
+                {text}
+            </ListItemText>
+        </ListItemButton>
+    );
+};
 
 
 const ProfilNavBar=({onSelectedMenu})=>{
@@ -15,6 +28,6 @@ const ProfilNavBar=({onSelectedMenu})=>{
             </Stack>
         </nav>
     );
-}
+};
 
 export default ProfilNavBar;
