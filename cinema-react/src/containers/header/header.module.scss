@@ -1,8 +1,8 @@
 :root{
-    --colorBackgroun:red;
+    --colorBackground:rgba(255, 218, 7, 0.6);
 }
 
-.headerApp{
-    background-color: var(--colorBackgroun);
+.container{
+    background-color: var(--colorBackground);
     color: black;
 }

@@ -1,11 +1,10 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 
 
-import style from "./header.module.scss"
-
+import Style  from "./header.module.scss";
 const Header = ({ onOpenMenu }) => (
     <header>
-        <AppBar className={style.headerApp}>
+        <AppBar className={Style.container}>
             <Toolbar>
                 <IconButton
                     onClick={() => onOpenMenu()}
