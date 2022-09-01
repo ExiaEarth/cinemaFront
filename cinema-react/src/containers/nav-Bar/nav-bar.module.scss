@@ -1,0 +1,39 @@
+:root{
+    --colorbackground:green;
+    --colortextLien:rgb(0, 0, 0);
+
+}
+
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    height: 5rem;
+    margin: 0 2rem;
+    background-color: var(--colorbackground);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.2px);
+    -webkit-backdrop-filter: blur(0.2px);
+    text-transform: uppercase;
+
+    ul{
+        list-style: none;
+        // flex-direction: column;
+        display: flex;
+        li{
+            margin: 0 1rem;
+            a{
+            color: var(--colortextLien);
+            text-decoration: none;
+            font-size: 1.5rem;
+            }
+            :hover{
+                color: red;
+            }
+        }
+    }
+
+
+}
