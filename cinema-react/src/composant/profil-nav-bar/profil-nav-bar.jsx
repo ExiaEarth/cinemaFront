@@ -19,11 +19,7 @@ const NavBarMenuItem = ({ to, text, icon, onSelected }) => {
 const ProfilNavBar=({onSelectedMenu})=>{
     return(
         <nav className={style.profilNav}>
-            <Stack
-                classeName={style.stackStyle}
-                direction='column'
-                divider={<Divider orientation='horizontal' />}
-                spacing={2}>
+            <Stack>
                 <Avatar src=""/>
             </Stack>
         </nav>
