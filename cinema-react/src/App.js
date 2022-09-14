@@ -1,48 +1,22 @@
 
-import { Drawer } from '@mui/material';
-// import{useState} from 'react'
+import { useRoutes } from 'react-router-dom'
+import { routes } from './route';
 import './App.scss';
-import Header from './composant/header/header';
-import ProfilNavBar from './composant/profil-nav-bar/profil-nav-bar';
 
 
 
 function App() {
 
-  // const[menuVisible,setMenuVisible]=useState();
+  const element = useRoutes(routes);
 
-  return(
-    <> 
-        <Header/>
-        <Drawer>
-          <ProfilNavBar/>
-        </Drawer>
-    </>
+  return (
 
-
+    <div className="App">
+      {element}
+    </div>
+    
   );
 }
 
-
-
-
-
-
 export default App;
-
-
-// function App() {
-
-//   const element = useRoutes(routes);
-
-//   return (
-
-//     <div className="App">
-//       {element}
-//     </div>
-    
-//   );
-// }
-
-// export default App;
 

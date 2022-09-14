@@ -1,0 +1,24 @@
+:root{
+    --colorBackgroundFooter:#BB883B;
+    --colortext:rgb(66, 66, 62);
+    --colorHover:green;
+
+}
+
+
+.container{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--colorBackgroundFooter);
+    color: var(--colortext);
+    .divText{
+        border: 1px solid rgb(47, 245, 255);
+
+    }
+    .divInformation{
+        border: 1px solid greenyellow;
+    }
+    :hover{
+        color: var(--colorHover);
+    }
+}

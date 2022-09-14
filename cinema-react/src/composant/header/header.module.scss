@@ -1,25 +1,31 @@
 :root{
     --colorBackground:rgba(255, 218, 7, 0.6);
+    --colorBackgroundProfil:rgba(108, 108, 104, 0.6);
 }
 
 .container{
+    
     background-image: url('../../images/cinema.jpg');
     background-repeat: no-repeat;
     background-size:cover ;
-    height: 8rem;
+    // height: 25%;
     // color: red;
     display: flex;
+    border: 1px solid rgb(178, 10, 200);
+
     .logo{
         // border: 1px solid red;
-        height: 8rem;
-        width: 8rem;
+        height: 8.1rem;
+        width: 7rem;
         background-image: url('../../images/AMECINE\(1\).png');
         background-size: contain;
         background-repeat: repeat;
+        border: 1px solid red;
+
     }
     .naviBar{
         margin-top: 6.5rem;
-        // border: 1px solid red;
+        border: 1px solid rgb(9, 255, 0);
         text-decoration: none;
         width: 85vw;
         ul{
@@ -54,12 +60,27 @@
         }
 
     }
-    .profil{
-        border: 1px solid red;
-        background-color: black;
-        margin-top: 1rem;
-        margin-left: 2.5rem;
-        height: 5rem;
-        width: 5rem;
+    .profilContainer{
+        background-color: var(--colorBackgroundProfil);
+        height: 8.1rem;
+        width: 11rem;
+        .button{
+            button{
+                background-color: rgb(60, 213, 21);
+                border: 1px solid red;
+                color: rgb(255, 255, 255);
+
+                link{
+                    color: rgb(255, 255, 255);
+
+                }
+                input{
+                    color: rgb(255, 30, 0);
+                    border: 1px solid rgb(21, 255, 0);
+
+                }
+
+            }
+        }
     }
 }

@@ -1,31 +1,40 @@
-import { AppBar, IconButton, Link, Toolbar, Typography } from '@mui/material';
+import { Link, Typography ,Avatar} from '@mui/material';
 // import IconMenu from  '@mui/icons-material/PersonSearchTwoTone';
+// import { , IconButton, ListItemButton, ListItemIcon, ListItemText, Stack } from "@mui/material";
 
-import Style  from "./header.module.scss";
-const Header = ({ onOpenMenu }) => (
+
+import style  from "./header.module.scss";
+const Header = ({ /*onOpenMenu*/ }) => {
+    return(
     <header>
-        <AppBar className={Style.container}>
-            <Toolbar>
+        <div className={style.container}>
+
                 <Typography>
-                     <Link to ='./*'> <p className={Style.logo}></p></Link>
+                     <Link to ='./*'> <div className={style.logo}></div></Link>
                 </Typography>
-                <div className={Style.naviBar}>
+                <div className={style.naviBar}>
                     <ul>
-                        <li><a href="">tets1</a></li>
-                        <li><a href="">tets1</a></li>
-                        <li><a href="">tets1</a></li>
-                        <li><a href="">tets1</a></li>
+                        <li><a href="*">tets1</a></li>
+                        <li><a href="*">tets1</a></li>
+                        <li><a href="*">tets1</a></li>
+                        <li><a href="*">tets1</a></li>
                     </ul>
                 </div>
-                <IconButton
-                    className={Style.profil}
-                    onClick={() => onOpenMenu()}>
-                    
-                </IconButton>
+                <div className={style.profilContainer}>
+                <Avatar/>
+                <div className={style.button}>
+                    <button type="submit"><Link to ='./*'>connection</Link></button>
+                    <button type="submit"><Link to ='./*'>inscription</Link></button>
+                    <button type="submit"><Link to ='./*'>déconnection</Link></button>
+                    <input type="submit" value="azert" />
+                    <Link to ='./*'><button>test1</button></Link>
+                
+                </div>
+                
 
-            </Toolbar>
-        </AppBar>
+                </div>
+        </div>
     </header>
-);
+)};
 
 export default Header ;
