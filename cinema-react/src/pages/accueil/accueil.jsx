@@ -9,6 +9,7 @@ import  style  from "./accueil.module.scss";
 
 
 
+
 const Accueil=()=>{
     // const[menuVisible,setMenuVisible]=useState();
   return(
@@ -16,9 +17,8 @@ const Accueil=()=>{
             <Header/>
             {/* <Drawer>
             </Drawer> */}
-
             <main className={style.maincontainer}>
-                <h1>azertyuio</h1>
+                <h1>Accueil Present</h1>
             </main>
             {/* <ProfilNavBar/> */}
 

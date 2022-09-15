@@ -1,17 +1,23 @@
+import { Typography,Link } from "@mui/material";
 import  style  from "./footer.module.scss";
-
+import  stylelo  from "../../images/AMECINE(1).png";
 
 
 const Footer=()=>{
     return(
         <div className={style.container}>
             <div className={style.divText}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet aliquam pariatur porro. Voluptas nihil voluptatem optio est culpa blanditiis quam delectus minus praesentium, vel numquam asperiores ea amet aut adipisci alias nam libero rem, deleniti quisquam perspiciatis harum debitis?</p>
+                <p>Ce projet a été crée par ©Marc Lemer. <br/>Dans le but du projet final de fin de formation de chez Interface3.Namur<br/>
+                Fait du 12/09/2022 au 23/09/22.
+                </p>
             </div>
+
             <div className={style.divInformation}>
                 <ul>
-                    <li><p>Dieu</p></li>
-                    <li><a href="http://">test lien</a></li>
+                    <p>Voici deux lien vert le répositorie back/front du projet</p>
+                    <a href="https://github.com/ExiaEarth/cinemaFront">Lien ver le Front du projet.</a><br/>
+                    <a href="https://github.com/ExiaEarth/cinemaBackProjet">Lien vers le Back du projet.</a>
+
                 </ul>
             </div>
         </div>

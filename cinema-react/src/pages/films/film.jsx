@@ -1,18 +1,17 @@
 import Footer from "../../composant/footer/footer";
 import Header from "../../composant/header/header";
-import style from './profil.module.scss'
+import style from './film.module.scss'
 
-const Profil=()=>{
-    return( 
-        <div>
+const Film=()=>{
+    return(
+        <div >
             <Header/>
             <main className={style.maincontainer}>
-            <h1>Profil Prés</h1>
+            <h1>Film présent</h1>
             </main>
             <Footer/>
-            
+
         </div>
     )
 };
-
-export default Profil;
+export default Film;

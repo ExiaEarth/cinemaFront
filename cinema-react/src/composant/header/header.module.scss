@@ -1,6 +1,8 @@
 :root{
     --colorBackground:rgba(255, 218, 7, 0.6);
     --colorBackgroundProfil:rgba(108, 108, 104, 0.6);
+    --colorBlack:black;
+    --colorwhite: white;
 }
 
 .container{
@@ -8,11 +10,7 @@
     background-image: url('../../images/cinema.jpg');
     background-repeat: no-repeat;
     background-size:cover ;
-    // height: 25%;
-    // color: red;
     display: flex;
-    border: 1px solid rgb(178, 10, 200);
-
     .logo{
         // border: 1px solid red;
         height: 8.1rem;
@@ -20,42 +18,33 @@
         background-image: url('../../images/AMECINE\(1\).png');
         background-size: contain;
         background-repeat: repeat;
-        border: 1px solid red;
+        // border: 1px solid red;
 
     }
     .naviBar{
         margin-top: 6.5rem;
-        border: 1px solid rgb(9, 255, 0);
         text-decoration: none;
         width: 85vw;
         ul{
-            border: 1px solid rgb(0, 255, 13);
             text-align: center;
             display: flex;
             color: aqua;
             list-style: none;
-
-
             li{
-            width: 80vh;
-            // display: inline;
-            // display: flex;
-            text-decoration: none;
-            border: 1px solid rgb(255, 0, 0);
-            
-            a{
-                width: 10rem;
-                color: rgb(3, 0, 0);
+                width: 80vh;
                 text-decoration: none;
-                text-transform: uppercase;
-                border: 1px solid rgb(0, 255, 13);
-
-
-            }
+                border: 1px solid rgb(255, 0, 0);
+                a{
+                    width: 10rem;
+                    color: rgb(3, 0, 0);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    // border: 1px solid rgb(0, 255, 13);
+                }
             :hover{
-                color: red;
-            }
-
+                color:var(--colorwhite);
+                background-color: var(--colorBackground);
+                }
             }
         }
 
@@ -66,8 +55,8 @@
         width: 11rem;
         .button{
             button{
-                background-color: rgb(60, 213, 21);
-                border: 1px solid red;
+                background-color: var(--colorBlack);
+                // border: 1px solid red;
                 color: rgb(255, 255, 255);
 
                 link{
@@ -76,8 +65,12 @@
                 }
                 input{
                     color: rgb(255, 30, 0);
-                    border: 1px solid rgb(21, 255, 0);
+                    // border: 1px solid rgb(21, 255, 0);
 
+                }
+                :hover{
+                    background-color: var(--colorBackground);
+                    color:var(--colorwhite);
                 }
 
             }

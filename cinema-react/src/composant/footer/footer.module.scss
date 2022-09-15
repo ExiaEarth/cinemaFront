@@ -1,24 +1,41 @@
 :root{
     --colorBackgroundFooter:#BB883B;
-    --colortext:rgb(66, 66, 62);
-    --colorHover:green;
+    --colortext:rgb(0, 0, 0);
+    --colorHover:rgb(128, 0, 0);
+    --colorHover2:rgb(13, 129, 56);
 
 }
 
 
 .container{
-    height: 20vh;
+    // height: 14vh;
     width: 100%;
     background-color: var(--colorBackgroundFooter);
     color: var(--colortext);
+    display: flex;
     .divText{
-        border: 1px solid rgb(47, 245, 255);
+        height: 12vh;
+        width: 25%;
+        text-align: center;
+        font-size: larger;
+        margin-left: 20rem;
+        max-width: 25%;
 
     }
     .divInformation{
-        border: 1px solid greenyellow;
-    }
-    :hover{
-        color: var(--colorHover);
+        margin-top: 0.5rem;
+        width: 25%;
+        max-width: 25%;
+        height: 12vh;
+        text-align: center;
+        font-size: larger;
+        margin-left: 20rem;
+        a{
+            color: var(--colortext);
+            text-decoration: none;
+        }
+        :hover{
+            color: var(--colorHover2);
+        }
     }
 }
