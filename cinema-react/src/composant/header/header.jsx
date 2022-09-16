@@ -18,7 +18,7 @@ const Header = ({ /*onOpenMenu*/ }) => {
                         <li><Link to ='/Accueil'><button>Accueil</button></Link></li>
                         <li><Link to ='/Salle'><button>Salle</button></Link></li>
                         <li><Link to ='/Film'><button>Film</button></Link></li>
-                        <li><Link to ='/Register'><button>Pas d'idée</button></Link></li>
+                        <li><Link to ='/Error'><button>Pas d'idée</button></Link></li>
                     </ul>
                 </div>
                 <div className={style.profilContainer}>

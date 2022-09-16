@@ -53,14 +53,19 @@
         background-color: var(--colorBackgroundProfil);
         height: 8.1rem;
         width: 11rem;
+        text-decoration: none;
         .button{
             button{
-                background-color: var(--colorBlack);
+                // background-color: var(--colorBlack);
                 // border: 1px solid red;
                 color: rgb(255, 255, 255);
+                // text-transform: none;
+                text-transform: uppercase;
+                    text-decoration: none;
+
 
                 link{
-                    color: rgb(255, 255, 255);
+                    color: rgb(8, 6, 6);
 
                 }
                 input{

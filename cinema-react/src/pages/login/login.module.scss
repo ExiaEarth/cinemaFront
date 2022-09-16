@@ -34,6 +34,7 @@
 
     }
     .logindiv{
+    border-radius: 10px;
         margin-left: 34rem;
         margin-top: 5rem;
         // border: 1px solid rgb(21, 255, 0);
@@ -59,9 +60,9 @@
 
         }
         .butlink{
-            margin-top: 2rem;
+            margin-top: 1rem;
             // border: 1px solid rgb(33, 219, 200);
-            display: inline-block;
+            // display: inline-block;
             justify-content: space-around;
             .btpass{
                 color: red;

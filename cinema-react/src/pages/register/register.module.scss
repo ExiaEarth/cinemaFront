@@ -3,8 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    // overflow-y: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    // overflow-y: scroll;
 
 }
 :root{
@@ -15,12 +15,40 @@
     background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 72.5vh;
     width: 100vw;
-    color: brown;
+    // color: brown;
     // border: 1px solid red;
     display: inline-block;
+    text-align: center;
     h1{
-        color: red;
+        color:var(--colorWhite);
+        // border: 1px solid var(--colorText);
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 5rem;
     }
+.registerdiv{
+    margin-left: 34rem;
+    margin-top: 5rem;
+    // border: 1px solid rgb(21, 255, 0);
+    background-color: var(--backLogin);
+    width: 52rem;
+    height: 10vw;
+    border-radius: 10px;
+    .identifiant{
+        margin-top: 0.5rem;
+    }
+    input{
+        background-color:var(--backgroundColor);
+        color: var(--colorWhite);
+        width: 12rem;
+    }
+    .error{
+        p{
+            color: red;
+        }
+    }
+
+}
 }
