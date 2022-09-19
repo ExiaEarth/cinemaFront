@@ -1,0 +1,62 @@
+.container{
+    // background-color: rgb(18, 238, 198);
+    width: 12rem;
+    height: 100%;
+    // display: inline;
+    border: 1px solid red;
+    .filmOne{
+        background-image: url('../../images/onePieceRed.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .filmDeux{
+        background-image: url('../../images/digimonLast.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .filmTrois{
+        background-image: url('../../images/casseNoissete.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .filmQuatre{
+        background-image: url('../../images/FateGrandOrder.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .filmCinq{
+        background-image: url('../../images/pokemon.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }    .filmSix{
+        background-image: url('../../images/dragonBallZ.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }    .filmSept{
+        background-image: url('../../images/godZilla.png');
+        width: 10rem;
+        height: 12rem;
+        // background-repeat: no-repeat;
+        background-size: cover;
+    }
+    :hover{
+        background-color: #1288C8;
+    }
+    button{
+        // transform: translateX(5rem);
+        transform: translateY(10rem);
+
+    }
+}

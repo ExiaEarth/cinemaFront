@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(20, 20, 20);
+    color: var(--colorWhite);
+    // width: v;
+    height: 20vh;
+    h3{
+        // margin-top: 5rem;
+        // transform: translateY(4rem);
+        // transform: translateX(3rem);
+        // transform: rotate(30deg);
+        transform: rotateX(90deg);
+        text-transform: uppercase;
+        // color: black;
+    }
+}

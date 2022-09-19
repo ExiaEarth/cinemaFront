@@ -1,5 +1,3 @@
-import Footer from "../../composant/footer/footer";
-import Header from "../../composant/header/header";
 import  style  from "./register.module.scss";
 
 import { useForm } from 'react-hook-form';
@@ -30,7 +28,6 @@ const Register=()=>{
 
     return(
         <div >
-            <Header/>
             <main className={style.maincontainer}>
                 <h1> Inscription</h1>
             <div className={style.registerdiv}>
@@ -60,6 +57,12 @@ const Register=()=>{
                     <label htmlFor="">Rentrée votre @mail : </label>
                     <input id="email" type="text" placeholder=" @mail" {...register('email')} />
                 </div>
+                
+                <form enctype="multipart/form-data" className={style.identifiant}>
+                <label htmlFor="">Rentrée votre Avatar : </label>
+                    <input type="file" name="rechercheImg" id="rechercheImg" />
+                </form>
+
                 <button type="submit">Valider</button>
                 </form>
                 {errorMsg && (
@@ -68,7 +71,6 @@ const Register=()=>{
 
             </div>
             </main>
-            <Footer/>
 
         </div>
         

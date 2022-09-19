@@ -13,38 +13,43 @@
 
 .maincontainer{
     background-color: var(--backgroundColor);
+    // background-color: var(--colorBlack);
     display: flex;
     flex-direction: column;
-    min-height: 73.5vh;
+    min-height: 50vh;
     width: 100vw;
     display: inline-block;
-    text-align: center;
-    h1{
-        border: 1px solid red;
-        color: red;
+    // border: 1px solid rgb(9, 255, 0);
+
+    h2{
+        // border: 1px solid red;
+        color: var(--colorWhite);
+    }
+    h3{
+        text-align: center;
     }
     .container{
         // border: 1px solid rgb(9, 255, 0);
-        color: aqua;
-        background-color: var(--backLogin);
+        margin-top: 0.5rem;
+        // color: aqua;
+        // background-color: var(--backLogin);
         width: 70rem;
-        height: 100vw;
+        height: 50vw;
         margin-left: 28rem;
         article{
-        border: 1px solid rgb(3, 232, 216);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        .lastFilm{
-            background-color:var(--backgroundColor);
-            height: 30vh;
-            width: 20vw;
-            margin-top: 2.5rem;
-            margin-left: 7.5rem;
-            color: red;
-        }
-
+            border: 1px solid rgb(3, 232, 216);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .lastFilm{
+                // background-color:var(--backgroundColor);
+                height: 30vh;
+                width: 20vw;
+                margin-top: 2.5rem;
+                margin-left: 7.5rem;
+                color: red;
+            }
         }
 
     }

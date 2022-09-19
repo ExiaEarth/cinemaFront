@@ -1,5 +1,4 @@
-import Footer from "../../composant/footer/footer";
-import Header from "../../composant/header/header";
+
 import  style  from "./updateprofil.module.scss";
 
 import { useForm } from 'react-hook-form';
@@ -30,7 +29,7 @@ const Updated=()=>{
 
     return(
         <div >
-            <Header/>
+
             <main className={style.maincontainer}>
                 <h1> modification profil</h1>
             <div className={style.registerdiv}>
@@ -60,6 +59,11 @@ const Updated=()=>{
                     <label htmlFor="">Rentrée votre @mail : </label>
                     <input id="email" type="text" placeholder=" @mail" {...register('email')} />
                 </div>
+
+                <form enctype="multipart/form-data" className={style.identifiant}>
+                <label htmlFor="">Rentrée votre Avatar : </label>
+                    <input type="file" name="rechercheImg" id="rechercheImg" />
+                </form>
                 <button type="submit">Valider</button>
                 </form>
                 {errorMsg && (
@@ -68,7 +72,6 @@ const Updated=()=>{
 
             </div>
             </main>
-            <Footer/>
 
         </div>
         

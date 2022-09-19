@@ -1,6 +1,5 @@
-import { Typography,Link } from "@mui/material";
 import  style  from "./footer.module.scss";
-import  stylelo  from "../../images/AMECINE(1).png";
+// import  stylelo  from "../../images/AMECINE(1).png";
 
 
 const Footer=()=>{

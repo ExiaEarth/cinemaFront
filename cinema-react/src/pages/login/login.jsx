@@ -1,6 +1,4 @@
-import Header from "../../composant/header/header";
 import style from './login.module.scss'
-import Footer from "../../composant/footer/footer";
 import{Link} from 'react-router-dom';
 import { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
@@ -33,8 +31,6 @@ const Login=()=>{
  
     return(
         <div>
-            <Header/>
-
             <main className={style.maincontainer}>
 
                 <form onSubmit={handleSubmit(onLogin)}>
@@ -68,10 +64,7 @@ const Login=()=>{
                 </form>
 
             </main>
-            <Footer/>
         </div>
-       
-
     );
 };
 export default Login;

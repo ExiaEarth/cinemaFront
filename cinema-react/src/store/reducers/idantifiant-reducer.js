@@ -23,11 +23,11 @@ const authReducer = createReducer(initialState, (builder) => {
             
         })
         .addCase(registerUser.rejected, (state, action) => {
-            state.errorMsg = 'Veuillez remplir toutes les données necessaires';
+            state.errorMsg = 'Veuillez remplir toutes les casses';
             // console.log(action);
         })
         .addCase(loginUser.rejected, (state, action) => {
-            state.errorMsg = 'Vos données sont invalides !';
+            state.errorMsg = 'Données invalides !';
             // console.log(action);
         })
         .addCase(logoutUser, (state, action) => {

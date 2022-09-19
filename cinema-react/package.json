@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.1",
     "clsx": "^1.2.1",
     "nanoid": "^4.0.0",
     "prop-types": "^15.8.1",
