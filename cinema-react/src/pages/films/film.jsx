@@ -7,7 +7,10 @@ const Film=()=>{
         <div >
             <Header/>
             <main className={style.maincontainer}>
-            <h1>Film présent</h1>
+                <h1>film</h1>
+            <div className={style.container}>
+
+            </div>
             </main>
             <Footer/>
 

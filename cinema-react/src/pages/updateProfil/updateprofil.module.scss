@@ -9,16 +9,13 @@
 }
 :root{
     --backgroundColor:black;
-    --colorText:blue;
-    --backLogin:#BB883B;
-    --colorWhite:white;
 }
 
 .maincontainer{
     background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
-    min-height: 73.5vh;
+    min-height: 72.5vh;
     width: 100vw;
     // color: brown;
     // border: 1px solid red;
@@ -30,17 +27,28 @@
         display: inline-block;
         text-transform: uppercase;
         margin-top: 5rem;
-
-
     }
-    .container{
-        border-radius: 10px;
-        margin-left: 34rem;
-        margin-top: 5rem;
-        // border: 1px solid rgb(21, 255, 0);
-        background-color: var(--backLogin);
-        width: 52rem;
-        height: 30vw;
-
+.registerdiv{
+    margin-left: 34rem;
+    margin-top: 5rem;
+    // border: 1px solid rgb(21, 255, 0);
+    background-color: var(--backLogin);
+    width: 52rem;
+    height: 10vw;
+    border-radius: 10px;
+    .identifiant{
+        margin-top: 0.5rem;
     }
+    input{
+        background-color:var(--backgroundColor);
+        color: var(--colorWhite);
+        width: 12rem;
+    }
+    .error{
+        p{
+            color: red;
+        }
+    }
+
+}
 }

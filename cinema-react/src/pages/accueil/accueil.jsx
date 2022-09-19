@@ -19,10 +19,12 @@ const Accueil=()=>{
             {/* <Drawer>
             </Drawer> */}
             <main className={style.maincontainer}>
-                <h1>Accueil Present</h1>
+                <h1>Accueil et ici la barre de recherche en bonus</h1>
                 <div className={style.container}>
                 <AfficheComp/>
-
+            {/* carouselle */}
+            {/* Event  bonus*/}
+            {/* prochaine sortie */}
                 </div>
             </main>
             {/* <ProfilNavBar/> */}

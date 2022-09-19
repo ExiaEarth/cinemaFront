@@ -1,0 +1,76 @@
+:root{
+    --colorWhite:white;
+    --colorBackinput:#898989;
+    --colorbutton:#0087BF;
+}
+
+.containertotal{
+    background-color: rgb(187, 189, 189);
+    width: 100vw;
+    height: 100vh;
+    // display: inline-flex;
+    text-align: center;
+    // align-items: center;
+    .logo{
+        height: 8.1rem;
+        width: 7rem;
+        background-image: url('../../images/AMECINE\(1\).png');
+        background-size: contain;
+        background-repeat: repeat;
+        // border: 1px solid red;
+        margin-left: 58rem;
+
+
+    }
+    h1{
+        color: var(--colorBlack);
+        margin-top: 10rem;
+    }
+    .login{
+        border: 1px solid var(--colorBlack);
+        width: 20%;
+        height: 20%;
+        background-color: var(--colorWhite);
+        margin-left: 50rem;
+        // display: flex;
+        .identifiant{
+            height: 5vh;
+            margin-top: 1rem;
+
+            label{
+                margin-top: 1rem;
+                color: var(--colorBlack);
+            }
+            input{
+                background-color: var(--colorBackinput);
+                border: 1px solid var(--colorBlack);
+            }
+        }
+        .password{
+            width: 20vw;
+            height: 5vh;
+            margin-top: 1rem;
+
+            label{
+                color: var(--colorBlack);
+                display: block;
+            }
+            input{
+                background-color: var(--colorBackinput);
+                border: 1px solid var(--colorBlack);
+            }
+        }
+        .butlink{
+            margin-top: 1rem;
+            // border: 1px solid rgb(83, 84, 160);
+
+            button{
+                color: var(--colorBlack);
+            }
+            :hover{
+                background-color:var(--colorbutton);
+
+            }
+        }
+    }
+}

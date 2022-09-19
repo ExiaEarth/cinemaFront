@@ -27,7 +27,7 @@ const Login=()=>{
 
     useEffect(() => {
         if (isConnected) {
-            navigate('/Accueil');
+            navigate('/Accueil/id:');
         }
     }, [isConnected, navigate]);
  

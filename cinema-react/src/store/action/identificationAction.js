@@ -16,6 +16,15 @@ export const loginUser = createAsyncThunk('user/login',
         return response.data;
     }
 );
+export const Update = createAsyncThunk('user/update',
+    async (data, thunkAPI) => {
+
+        // Requete AJAX vers le serveur Backend
+        const response = await axios.put('http://localhost:8100/api/auth/user/updated', data);
+        return response.data;
+    }
+);
+
 
 
 export const logoutUser = createAction('user/logout');
