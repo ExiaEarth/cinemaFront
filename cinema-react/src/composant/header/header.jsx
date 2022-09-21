@@ -1,10 +1,12 @@
 import {  Typography ,Avatar} from '@mui/material';
 import { IconButton} from "@mui/material";
+import { useSelector } from 'react-redux';
 import{Link} from 'react-router-dom';
 
 
 import style  from "./header.module.scss";
 const Header = ({onOpenMenu}) => {
+    const pseudo=useSelector(state=>state.auth.pseudo);
     return(
     <header>
         <div className={style.container}>
@@ -17,13 +19,14 @@ const Header = ({onOpenMenu}) => {
                         <li><Link to ='/Accueil'><button>Accueil</button></Link></li>
                         <li><Link to ='/Salle'><button>Salle</button></Link></li>
                         <li><Link to ='/Film'><button>Film</button></Link></li>
-                        <li><Link to ='/Error'><button>Pas d'idée</button></Link></li>
+                        <li><Link to ='/Error'><button>ici seras schearch</button></Link></li>
                     </ul>
             </div>
             <div className={style.profilContainer}>
                 <IconButton onClick={() => onOpenMenu()}>
                     <Avatar className={style.avatar} />
-                    <span>pseudo</span>
+                    {(pseudo)?<span >{pseudo}</span>:<span >bonjour</span>}
+
                 </IconButton>
             </div>
 

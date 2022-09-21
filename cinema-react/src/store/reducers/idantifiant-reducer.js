@@ -5,7 +5,9 @@ import { loginUser, registerUser, logoutUser } from '../action/identificationAct
 const initialState = {
     isConnected: false,
     // token: null,
-    errorMsg: null
+    errorMsg: null,
+    pseudo:null,
+    userId:null
 };
 
 const authReducer = createReducer(initialState, (builder) => {
@@ -14,12 +16,16 @@ const authReducer = createReducer(initialState, (builder) => {
             state.isConnected = true;
             // state.token = action.payload;       // payload -> response.data.token
             state.errorMsg = null;
+            state.pseudo=action.payload.pseudo;
+            state.userId=action.payload._id;
             
         })
         .addCase(loginUser.fulfilled, (state, action) => {
             state.isConnected = true;
             // state.token = action.payload;
             state.errorMsg = null;
+            state.pseudo=action.payload.pseudo;
+            state.userId=action.payload._id;
             
         })
         .addCase(registerUser.rejected, (state, action) => {
@@ -34,6 +40,8 @@ const authReducer = createReducer(initialState, (builder) => {
             state.isConnected = false;
             // state.token = null;
             state.errorMsg = null;
+            state.pseudo=null;
+            state.userId=null;
         });
 });
 

@@ -3,7 +3,8 @@ import { Avatar, Divider, List, ListItemButton, ListItemText, Stack} from '@mui/
 import { profilRoute } from './nav-router';
 import style from './profil-nav-bar.module.scss';
 import { NavLink } from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../../store/action/identificationAction';
 
 const NavBarMenuItem = ({ to, text, onSelected }) => {
     return (
@@ -16,24 +17,25 @@ const NavBarMenuItem = ({ to, text, onSelected }) => {
 };
 
 const ProfilNavBar=({onSelectedMenu})=>{
+    // Me permet de me déconnecter du cont  utiliser
+    const dispatch=useDispatch();
+
+    const deconex=()=>{
+        dispatch(logoutUser())
+    }
+
     return(
             <nav className={style.container}>
                 <Stack >
                     <Avatar className={style.logo} />
                     <span>Pseudo1</span>
                 </Stack>
-                {/* <div className={style.button}>
-                    <button type="submit"><Link to ='/Login'>connection</Link></button>
-                     <button type="submit"><Link to ='/Register'>inscription</Link></button>
-                     <button type="submit"><Link to ='./*'>déconnection</Link></button>
-                    </div>
-                    <div>
-                     <Link to ='/Profil'><button>Profil</button></Link>
-                </div> */}
 
                 <List>
                     {profilRoute.map((element,index)=>(<NavBarMenuItem {...element} onSelected={onSelectedMenu} key={index}/>))}
                 </List>
+                {/* Button pour la déconnection */}
+                <button onClick={deconex}>deco</button>
             </nav>
     );
 };

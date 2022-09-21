@@ -13,24 +13,18 @@ import VideComponent from '../../composant/spe/spe';
 const Accueil=()=>{
     // const[menuVisible,setMenuVisible]=useState();
   return(
-        <div >
-            <main className={style.maincontainer}>
-
             <div className={style.container}>
                     
-                    <h2>À l'affiche au cinéma</h2>
-                    <AfficheComp/>
+                <h2>À l'affiche au cinéma</h2>
+                <AfficheComp/>
 
-                    <h2>Avant-premières et préventes </h2>
-                    <VideComponent/>
+                <h2>Avant-premières et préventes </h2>
+                <VideComponent/>
 
-                    <h2>Prochaine sortie</h2>
-                    <VideComponent/>
+                <h2>Prochaine sortie</h2>
+                <VideComponent/>
 
-                </div>
-
-            </main>
-        </div>  
+             </div>
     );
 };
 export default Accueil;

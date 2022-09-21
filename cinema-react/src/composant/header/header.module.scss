@@ -33,17 +33,21 @@
             li{
                 width: 80vh;
                 text-decoration: none;
-                border: 1px solid rgb(255, 0, 0);
-                a{
-                    width: 10rem;
+                // border: 1px solid rgb(255, 0, 0);
+                button{
+                    width: 100%;
                     color: rgb(3, 0, 0);
-                    text-decoration: none;
+                    // text-decoration: none;
                     text-transform: uppercase;
                     // border: 1px solid rgb(0, 255, 13);
+                    border-radius: 10px;
                 }
-            :hover{
-                color:var(--colorwhite);
-                background-color: var(--colorBackground);
+                :hover{
+                    button{
+                        color:var(--colorwhite);
+                        background-color: var(--colorBackground);
+                        // border-radius: 10px;
+                    }
                 }
             }
         }

@@ -20,27 +20,36 @@
     flex-direction: column;
     min-height: 73.5vh;
     width: 100vw;
-    // color: brown;
-    // border: 1px solid red;
     display: inline-block;
     text-align: center;
     h1{
         color:var(--colorWhite);
-        // border: 1px solid var(--colorText);
         display: inline-block;
         text-transform: uppercase;
-        margin-top: 5rem;
-
+        margin-top: 2rem;
 
     }
     .container{
         border-radius: 10px;
         margin-left: 34rem;
-        margin-top: 5rem;
-        // border: 1px solid rgb(21, 255, 0);
         background-color: var(--backLogin);
         width: 52rem;
         height: 30vw;
+        .identifiant{
+            label{
+                color: rgb(18, 2, 109);
+            }
+        }
+        .password{
+            label{
+                color: rgb(0, 0, 0);
+            }
+        }
+        .identifiant{
+            label{
+                color: rgb(0, 0, 0);
+            }
+        }
 
     }
 }
