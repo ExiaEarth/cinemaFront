@@ -33,37 +33,37 @@ const Register=()=>{
             <div className={style.registerdiv}>
 
                 <form onSubmit={handleSubmit(onRegister)}>
-                <div className={style.identifiant}>
-                    <label htmlFor="">Rentrée votre pseudo: </label>
-                    <input id="pseudo" type="text" placeholder="pseudo" {...register('pseudo')} />
-                </div>
+                    <div className={style.identifiant}>
+                        <label htmlFor="">Rentrée votre pseudo: </label>
+                        <input id="pseudo" type="text" placeholder="pseudo" {...register('pseudo')} />
+                    </div>
 
-                <div className={style.identifiant}>
-                    <label htmlFor="">Rentrée prenom : </label>
-                    <input id="prenom" type="text" placeholder=" prenom " {...register('prenom')} />
-                </div>
+                    <div className={style.identifiant}>
+                        <label htmlFor="">Rentrée prenom : </label>
+                        <input id="prenom" type="text" placeholder=" prenom " {...register('prenom')} />
+                    </div>
 
-                <div className={style.identifiant}>
-                    <label htmlFor="">Rentrée votre nom : </label>
-                    <input id="nom" type="text" placeholder=" nom"{...register('nom')}  />
-                </div>
+                    <div className={style.identifiant}>
+                        <label htmlFor="">Rentrée votre nom : </label>
+                        <input id="nom" type="text" placeholder=" nom"{...register('nom')}  />
+                    </div>
 
-                <div className={style.identifiant}>
-                    <label htmlFor="">Rentrée votre mot de passe: </label>
-                    <input id="password" type="text" placeholder=" mot de passe" {...register('password')}  />
-                </div>
+                    <div className={style.identifiant}>
+                        <label htmlFor="">Rentrée votre mot de passe: </label>
+                        <input id="password" type="text" placeholder=" mot de passe" {...register('password')}  />
+                    </div>
 
-                <div className={style.identifiant}>
-                    <label htmlFor="">Rentrée votre @mail : </label>
-                    <input id="email" type="text" placeholder=" @mail" {...register('email')} />
-                </div>
-                
-                <form enctype="multipart/form-data" className={style.identifiant}>
-                <label htmlFor="">Rentrée votre Avatar : </label>
-                    <input type="file" name="rechercheImg" id="rechercheImg" />
-                </form>
+                    <div className={style.identifiant}>
+                        <label htmlFor="">Rentrée votre @mail : </label>
+                        <input id="email" type="text" placeholder=" @mail" {...register('email')} />
+                    </div>
+                    
+                    {/* <form enctype="multipart/form-data" className={style.identifiant}>
+                    <label htmlFor="">Rentrée votre Avatar : </label>
+                        <input type="file" name="rechercheImg" id="rechercheImg" />
+                    </form> */}
 
-                <button type="submit">Valider</button>
+                    <button type="submit">Valider</button>
                 </form>
                 {errorMsg && (
                         <p className={style.error}>{errorMsg}</p>

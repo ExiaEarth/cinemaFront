@@ -23,11 +23,6 @@ export const routes= [
         element:<Accueil/>
     },
     {
-        path:'Accueil/id:',
-        element:<Accueil/>
-    },
-
-    {
         path:'Register',
         element:<Register/>
     },

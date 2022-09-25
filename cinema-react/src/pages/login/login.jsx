@@ -25,7 +25,7 @@ const Login=()=>{
 
     useEffect(() => {
         if (isConnected) {
-            navigate('/Accueil/id:');
+            navigate('/Accueil');
         }
     }, [isConnected, navigate]);
  
@@ -35,7 +35,7 @@ const Login=()=>{
 
                 <form onSubmit={handleSubmit(onLogin)}>
 
-                    // <h1>connexion</h1>
+                     <h1>connexion</h1>
 
                     <div className={style.logindiv}>
 
@@ -55,9 +55,6 @@ const Login=()=>{
                             <Link to='/Register'><button>S'enregistrer</button></Link>
                         </div>
 
-                        {/* {errorMsg && (
-                        <p>{errorMsg}</p>
-                    )} */}
 
                     </div>
                     

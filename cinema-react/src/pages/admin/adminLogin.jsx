@@ -27,19 +27,17 @@ const LoginAdmin=()=>{
 
     useEffect(() => {
         if (isConnected) {
-            navigate('/Accueil/id:');
+            navigate('/Accueil');
         }
     }, [isConnected, navigate]);
     return(
+
         
-        <div className={style.containertotal}>
-
-            <h1>Connection Administrateur</h1>
-
+    <div className={style.containertotal}>
+        <form onSubmit={handleSubmit(onLogin)}>
+            <h1>Connexion Administrateur</h1>
             <div className={style.logo}></div>
-
-           <div className={style.login}>
-
+            <div className={style.login}>
             <div className={style.identifiant}>
                     <label htmlFor=""> Nom d'utilisateur ou adresse mail </label>
                     <input id="identifiant" type="text" placeholder=" Identifiant/@mail" {...register('identifiant')}/>
@@ -55,7 +53,19 @@ const LoginAdmin=()=>{
                     <Link to='Error'><button className={style.btpass}>mot de passe oubliée</button></Link>
                 </div>
             </div>
-        </div>
+
+        </form>
+    </div>
+        
+
+
+        //     <div className={style.logo}></div>
+
+        //    <div className={style.login}>
+
+
+            // </div>
+        // </div>
     )
 }
 

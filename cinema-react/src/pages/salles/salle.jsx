@@ -19,16 +19,16 @@ const Salle=()=>{
 
     return(
         <main className={style.maincontainer}>
-        <h1>Salles</h1>
-        <div className={style.container}>
-        {salles.map(salle=>
-            <div className={style.containerFilm}>
-                <div className={style.image} >{salle.image}</div>
-                <div className={style.desc}><p> La {salle.nom}  <br></br> est composée de {salle.place} place assise et {salle.information}</p></div>
+            <h1>Salles</h1>
+            <div className={style.container}>
+                {salles.map(salle=>
+                    <div className={style.containerFilm}>
+                        <div className={style.image} ><img src={salle.image} className={style.image} /></div>
+                        <div className={style.desc}><p> La {salle.nom}  <br></br> est composée de {salle.place} place assise et {salle.information}</p></div>
+                    </div>
+                )}
             </div>
-        )}
-        </div>
-    </main>
+        </main>
     )
 };
 export default Salle;

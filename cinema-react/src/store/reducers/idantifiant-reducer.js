@@ -7,7 +7,12 @@ const initialState = {
     // token: null,
     errorMsg: null,
     pseudo:null,
-    userId:null
+    prenom:null,
+    nom:null,
+    password:null,
+    email:null,
+    userId:null,
+    avatar:null
 };
 
 const authReducer = createReducer(initialState, (builder) => {
@@ -18,6 +23,12 @@ const authReducer = createReducer(initialState, (builder) => {
             state.errorMsg = null;
             state.pseudo=action.payload.pseudo;
             state.userId=action.payload._id;
+            state.prenom=action.payload.prenom;
+            state.nom=action.payload.nom;
+            state.password=action.payload.password;
+            state.email=action.payload.email;
+            state.avatar=action.payload.avatar;
+
             
         })
         .addCase(loginUser.fulfilled, (state, action) => {
@@ -26,6 +37,12 @@ const authReducer = createReducer(initialState, (builder) => {
             state.errorMsg = null;
             state.pseudo=action.payload.pseudo;
             state.userId=action.payload._id;
+            state.prenom=action.payload.prenom;
+            state.nom=action.payload.nom;
+            state.password=action.payload.password;
+            state.avatar=action.payload.avatar;
+            state.email=action.payload.email;
+
             
         })
         .addCase(registerUser.rejected, (state, action) => {
@@ -42,6 +59,11 @@ const authReducer = createReducer(initialState, (builder) => {
             state.errorMsg = null;
             state.pseudo=null;
             state.userId=null;
+            state.prenom=null;
+            state.nom=null;
+            state.password=null;
+            state.email=null;
+            state.avatar=null;
         });
 });
 

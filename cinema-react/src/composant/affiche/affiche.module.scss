@@ -1,49 +1,9 @@
 .container{
-  border: 1px solid red;
-  width: 58vw;
-  height: 50vh;
+    // border: 1px solid rgb(0, 251, 255);
+    width: 58vw;
+    height: 60vh;
     height: 20vh;
     display: flex;
-    // overflow: visible;
-    column-gap: 0;
-    margin: 0;
-    padding: 0;
-    .last{
-        // border: 1px solid red;
-        width: 1vw;
-        // height: 3vh;
-        button{
-            margin-top: 3rem;
-            z-index: 1;
-        }
-    }
-    .filmCont{
-        // border: 1px solid rgb(15, 4, 4);
-        height: 9.4rem;
-        width: 100%;
-        display: flex;
-        z-index: 2;
+    box-sizing: content-box;
 
-    }
-    .first{
-        // border: 1px solid rgb(18, 242, 26);
-        width: 1vw;
-        // height: 3vh;
-        button{
-            z-index: 1;
-            margin-top: 3rem;
-        }
-
-    }
-    .vide{
-        z-index: 1;
-
-        background: rgba(255, 255, 255, 0);
-        height: 1rem;
-        // border: 1px solid rgb(0, 64, 255);
-        width: 100%;
-
-    }
-  
-      
 }
