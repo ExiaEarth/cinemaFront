@@ -35,7 +35,7 @@ const ProfilNavBar=({onSelectedMenu})=>{
 
                 <Stack >
                 {(pseudo)?
-                    <Avatar className={style.avatar}><img src={avatar} alt="Avatar user" srcset="Avatar user" /></Avatar>:
+                    <Avatar className={style.avatar}><img src={avatar} alt="" srcset="" /></Avatar>:
                     <Avatar className={style.avatar}/>
                 }
                     {(pseudo)?<span>{pseudo}</span>:<span>Visiteur</span>}

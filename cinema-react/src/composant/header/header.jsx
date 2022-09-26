@@ -5,6 +5,7 @@ import{Link} from 'react-router-dom';
 
 
 import style  from "./header.module.scss";
+
 const Header = ({onOpenMenu}) => {
     const pseudo=useSelector(state=>state.auth.pseudo);
     const avatar=useSelector(state=>state.auth.avatar);

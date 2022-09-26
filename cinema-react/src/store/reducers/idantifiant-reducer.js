@@ -12,7 +12,8 @@ const initialState = {
     password:null,
     email:null,
     userId:null,
-    avatar:null
+    avatar:null,
+    role:null
 };
 
 const authReducer = createReducer(initialState, (builder) => {
@@ -28,6 +29,7 @@ const authReducer = createReducer(initialState, (builder) => {
             state.password=action.payload.password;
             state.email=action.payload.email;
             state.avatar=action.payload.avatar;
+            state.role=action.payload.role;
 
             
         })
@@ -42,6 +44,8 @@ const authReducer = createReducer(initialState, (builder) => {
             state.password=action.payload.password;
             state.avatar=action.payload.avatar;
             state.email=action.payload.email;
+            state.role=action.payload.role;
+
 
             
         })
@@ -64,6 +68,7 @@ const authReducer = createReducer(initialState, (builder) => {
             state.password=null;
             state.email=null;
             state.avatar=null;
+            state.role=null;
         });
 });
 

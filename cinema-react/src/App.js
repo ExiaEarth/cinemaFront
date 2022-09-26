@@ -22,12 +22,12 @@ function App() {
     <div className="App">
 
       <Header onOpenMenu={()=>setMenuVisible(true)}/>
-        <Drawer anchor='right'
-        open={menuVisible}
-        onClose={()=>setMenuVisible(false)}>
-        <ProfilNavBar onSelectedMenu={()=>setMenuVisible(true)}/>
 
-        </Drawer>
+      <Drawer anchor='right'open={menuVisible}onClose={()=>setMenuVisible(false)}>
+
+        <ProfilNavBar onSelectedMenu={()=>setMenuVisible(true)}/>
+        
+      </Drawer>
 
       <main>
         {element}

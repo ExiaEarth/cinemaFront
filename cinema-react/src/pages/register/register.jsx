@@ -22,6 +22,11 @@ const Register=()=>{
     },[isConnected,navigate])
 
     const onRegister=(data)=>{
+        const inputFile=document.getElementById('avatar')
+        // const AvData=new FormData()
+        // Object.keys(data).forEach(
+        //     (key)=>{AvData.append(key,data[key])})
+        //     AvData.append("avatar", inputFile.files.item(0))
         dispatch(registerUser(data));
         reset();
     }
@@ -60,7 +65,7 @@ const Register=()=>{
                     
                     {/* <form enctype="multipart/form-data" className={style.identifiant}>
                     <label htmlFor="">Rentrée votre Avatar : </label>
-                        <input type="file" name="rechercheImg" id="rechercheImg" />
+                        <input type="file" name="rechercheImg" id="avatar" />
                     </form> */}
 
                     <button type="submit">Valider</button>
