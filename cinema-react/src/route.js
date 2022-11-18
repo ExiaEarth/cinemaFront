@@ -7,6 +7,7 @@ import Profil from "./pages/profil/profil";
 import Register from "./pages/register/register";
 import Salle from "./pages/salles/salle";
 import Updated from "./pages/updateProfil/updateprofil";
+import PageAdmin from "./pages/pageAdmin/adminPage";
 
 
 
@@ -62,4 +63,9 @@ export const routes= [
         path:'Admin',
         element:<LoginAdmin/>
     },
+    {
+        path:'PageAdmin',
+        element:<PageAdmin/>
+    }
 ]
+

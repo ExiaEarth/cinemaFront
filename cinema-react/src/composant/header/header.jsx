@@ -26,6 +26,8 @@ const Header = ({onOpenMenu}) => {
                         <li><Link to ='/Film'><button>Film</button></Link></li>
                         {/* <li><Link to ='/Error'><button>Bon</button></Link></li> */}
                     </ul>
+                    <li className={style.adminBtn}><Link to ='/PageAdmin'><button>AdminSysteme</button></Link></li>
+
             </div>
             <div className={style.profilContainer}>
                 <IconButton onClick={() => onOpenMenu()}>
